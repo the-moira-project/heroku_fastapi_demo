@@ -1,6 +1,9 @@
 from sqlmodel import create_engine
+import os
+import psycopg2
 
-sqlite_file_name = "database.db"
-sqlite_url = f"sqlite:///{sqlite_file_name}"
+DATABASE_URL = os.environ['DATABASE_URL']
 
-engine = create_engine(sqlite_url, echo=True)
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+
+engine = create_engine(conn, echo=True)

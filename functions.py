@@ -3,6 +3,8 @@ from db import engine
 from models import *
 
 
+# scratch pad for functions to export to other files
+
 def create_db_and_tables():
     SQLModel.metadata.create_all(engine)
 
