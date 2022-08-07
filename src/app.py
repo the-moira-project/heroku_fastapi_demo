@@ -1,5 +1,8 @@
 from functions import create_db_and_tables
 
+# this file is used to setup the initial database and tables
+# terminal command: python app.py
+
 
 def main():
     create_db_and_tables()

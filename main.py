@@ -1,7 +1,7 @@
 from sqlmodel import Session
-from db import engine
+from src.db import engine
 from fastapi import FastAPI
-from models import Snapshot
+from src.models import Snapshot
 
 
 app = FastAPI()

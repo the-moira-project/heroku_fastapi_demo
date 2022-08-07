@@ -6,6 +6,10 @@ from models import *
 # scratch pad for functions to export to other files
 
 def create_db_and_tables():
+    """
+    create the database and tables
+    run via terminal command: python app.py
+    """
     SQLModel.metadata.create_all(engine)
 
 
